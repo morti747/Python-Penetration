@@ -37,11 +37,6 @@ print (" Server is currently running @ ", host)
 print (" ")
 print (" Waiting for any incoming connection... ")
 
-s.listen(1)
-conn, addr = s.accept()
-print("")
-print (addr, "Has connected to the server successfully ")
-
 
 ```
 ##
@@ -84,7 +79,15 @@ print (" ")
 # :zap: Connection on attacker's pc :zap:
 
 :star: As soon as the script is executed the attacker's machin will receive access to the CLI of the Target PC, and now we
-are ready to go. It shows us to which IP address is connected and on wich port as is shown on the next photo. 
+are ready to go. It shows us to which IP address is connected and on wich port as is shown on the next photo by running this part of program. 
+
+```python
+s.listen(1)
+conn, addr = s.accept()
+print("")
+print (addr, "Has connected to the server successfully ")
+
+``
 
 ##
 <img src=images/7.PNG  alt="alt text" width="950" height="550">
