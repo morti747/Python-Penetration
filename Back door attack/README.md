@@ -200,4 +200,4 @@ and that's it. we got it.
 
 ##
 
-
+:star:you can see the result of the commands at the last line ``` mytargetINFO.txt Has been downloaded and saved ```
