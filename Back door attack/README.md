@@ -149,4 +149,17 @@ of our program using ``` Custom_Dir ``` command and then choosing ``` c:\\ ```:
 :star: As you can see all directories are shown as the result of our command. 
 
 
+##
+:star: Let's see which files and directories the Target PC has in its ``` C:\Users\mrgt7\Desktop\My-Documents\test ``` directory
+##
+<img src=images/12.PNG  alt="alt text" width="950" height="550">
+
+##
+
+:star:We can check on our Target PC:
+
+##
+<img src=images/13.PNG  alt="alt text" width="950" height="550">
+
+##
 
