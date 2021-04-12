@@ -122,8 +122,8 @@ while 1:
 And we can find out where we are ```command output : C:\Users\mrgt7\Desktop\My-Documents\test ```
 
 
-:star: Let's see which files and directories the Target PC has in for example C directory by running this part
-of our program using ``` Custom_Dir ``` command:
+:star: Let's see which files and directories the Target PC has in for example ``` C ``` directory by running this part
+of our program using ``` Custom_Dir ``` command and then choosing ``` c:\\ ```:
 
 ```python
     elif command == "custom_dir":
