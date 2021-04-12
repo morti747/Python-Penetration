@@ -186,3 +186,15 @@ Here we want to steel his `MY-PASSWORD` file including all his password located 
 
 ```
 
+#
+:star: so first we execute ``` download_file ``` 
+then we shoudl put the path and the file name with its extension ```C:\Users\mrgt7\Desktop\My-Documents\documents\MY-PASSWORD ``` 
+then we wirte the path and name that we want to this file be saved in our pc in this case ```mytargetINFO.txt```.
+and that's it. we got it.
+
+##
+<img src=images/14.PNG  alt="alt text" width="950" height="550">
+
+##
+
+
