@@ -165,7 +165,7 @@ of our program using ``` Custom_Dir ``` command and then choosing ``` c:\\ ```:
 
 ##
 :star: Let's start downloading files from our target using ``` download_file  ``` command to run the following part of our program:
-Here we want to steel his MY-PASSWORD file including all his password saving on his desktop.
+Here we want to steel his MY-PASSWORD file including all his password located on his desktop.
 
 ```python
     elif command == "download_file":
