@@ -101,11 +101,11 @@ view_cwd
 ```
 
 ##
-<img src=images/8.PNG  alt="alt text" width="950" height="550">
+<img src=images/9.PNG  alt="alt text" width="950" height="550">
 
 ##
 
-And we can find out where we are ```command output :  C:\Users\mrgt7\Desktop ```
+And we can find out where we are ```command output : C:\Users\mrgt7\Desktop\My-Documents\test ```
 
 
 
