@@ -146,6 +146,7 @@ of our program using ``` Custom_Dir ``` command and then choosing ``` c:\\ ```:
 
 ##
 
+:star: As you can see all directories are shown as the result of our command. 
 
 
 
