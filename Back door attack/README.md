@@ -94,17 +94,18 @@ print (addr, "Has connected to the server successfully ")
 
 ##
 
-:ostar: Let's see on the Target PC, in which directory we are working by running the command:
+:star: Let's see on the Target PC, in which directory we are working by running the command:
 
 ```
 view_cwd
 ```
 
+##
+<img src=images/8.PNG  alt="alt text" width="950" height="550">
 
+##
 
-
-
-
+And we can find out where we are ```command output :  C:\Users\mrgt7\Desktop ```
 
 
 
