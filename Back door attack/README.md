@@ -22,21 +22,26 @@ any incoming connection:
 
 
 ```python
-#!/usr/bin/python
 import os
 import socket
 
 s = socket.socket()
+host = socket.gethostname()
 port = 8080
-host = "127.0.0.1"
-host = input (str("Please enter the server address : "))
 
+s.bind((host, port))
 
-s.connect((host,port))
 
 print (" ")
-print (" Connected to the server successfully")
+print (" Server is currently running @ ", host)
 print (" ")
+print (" Waiting for any incoming connection... ")
+
+s.listen(1)
+conn, addr = s.accept()
+print("")
+print (addr, "Has connected to the server successfully ")
+
 
 ```
 ##
