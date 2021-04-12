@@ -87,16 +87,18 @@ conn, addr = s.accept()
 print("")
 print (addr, "Has connected to the server successfully ")
 
-``
+```
 
 ##
 <img src=images/7.PNG  alt="alt text" width="950" height="550">
 
 ##
 
+:ostar: Let's see on the Target PC, in which directory we are working by running the command:
 
-
-
+```
+view_cwd
+```
 
 
 
