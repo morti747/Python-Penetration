@@ -1,4 +1,4 @@
-# Back door attack AAA
+# Back door attack
 in this topology we are going to use python scripts as a Trajon to create a back door on the victim computer
 to copy files from victim machine, delete files on this target, send file to this machine etc.
 
