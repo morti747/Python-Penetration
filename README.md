@@ -1,13 +1,13 @@
 # Back door attack
-in this topology we are going to use python scripts as a Trajon to create a back door on the victim computer
+in this topology we are going to use python scripts as a Trojan to create a back door on the victim computer
 to copy files from victim machine, delete files on this target, send file to this machine etc.
 
 
-# :zap: How this works :zap: 
+# :zap: How this works? :zap: 
 :star: Step 1: Firs, imagine that this target has downloaded a file from internet and inside this file there is a Trojan file that need to be 
 executed to create a connection from target machine to our computer, then we are ready to go. 
 
-in this topology, the computers are in different vlans, and we are going to create the back door from PC called Target to the hacker's computer called attacker. 
+in this topology, the computers are in different vlans, and we are going to create the back door from a PC called `Target` to the hacker's computer called `Attacker`. 
 
 ##
 <img src=Back%20door%20attack/images/3.PNG  alt="alt text" width="950" height="550">
@@ -17,7 +17,7 @@ in this topology, the computers are in different vlans, and we are going to crea
 
 # :zap: Waiting for target to execute :zap: 
 
-:star: Here the attacker by running this part of command start listening the to his port waiting for 
+:star: Here the attacker, by running this part of command, starts listening to his port waiting for 
 any incoming connection:
 
 
@@ -48,9 +48,9 @@ print (" Waiting for any incoming connection... ")
 
 # :zap: Target executes our python script :zap:
 
-:star: Step 2: Imagine the target has downloaded an executable file like a free application that our attacker uploaded befor from internet,
-now he want to install that application that contains our Trojan, so when he executes our file, our python script start working. 
-it asks the server name, we put the server's name [DESKTOP-E80I7RR] and the connection will be created between these two machines.
+:star: Step 2: Imagine the target has downloaded an executable file like a free application that our attacker uploaded before from the Internet,
+now he wants to install that application that contains our Trojan, so when he executes our file, our python script starts working. 
+it asks for the server name, we put the server's name [DESKTOP-E80I7RR] and the connection will be created between these two machines.
 as the result you can see ``` Connected to the server successfully ``` on CLI of the target PC.
 
 ```python
@@ -78,7 +78,7 @@ print (" ")
 
 # :zap: Connection on attacker's pc :zap:
 
-:star: As soon as the script is executed the attacker's machin will receive access to the CLI of the Target PC, and now we
+:star: As soon as the script is executed the attacker's machine will receive access to the CLI of the Target PC, and now we
 are ready to go. It shows us to which IP address is connected and on wich port as is shown on the next photo by running this part of program. 
 
 ```python
@@ -165,7 +165,7 @@ of our program using ``` Custom_Dir ``` command and then choosing ``` c:\\ ```:
 
 ##
 :star: Let's start downloading files from our target using ``` download_file  ``` command to run the following part of our program:
-Here we want to steel his `MY-PASSWORD` file including all his password located on this path ```C:\Users\mrgt7\Desktop\My-Documents\documents```.
+Here we want to steal his `MY-PASSWORD` file including all his password located on this path ```C:\Users\mrgt7\Desktop\My-Documents\documents```.
 ##
 <img src=Back%20door%20attack/images/15.PNG  alt="alt text" width="950" height="550">
 
@@ -213,7 +213,7 @@ by executing this part of our python script;
 
 ##
 
-```
+```python
     elif command == "remove_file":
         conn.send(command.encode())
         fileanddir = input(str("Please enter the filename and directory : "))
@@ -234,5 +234,5 @@ by executing this part of our python script;
 
 ##
 
-:star: You can see that it dosen't exist anymore. 
+:star: You can see that it doesn't exist anymore. 
 
